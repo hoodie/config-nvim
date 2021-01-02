@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/Users/hendrik/.config/nvim/plugged/coc.nvim/.github'
+let g:netrw_dirhist_1='/Users/hendrik/.config/nvim/plugged/coc.nvim'
+let g:netrw_dirhist_0='/Users/hendrik/.config/nvim/plugged/coc.nvim/autoload'
+let g:netrw_dirhist_9='/Users/hendrik/.config/nvim/plugged/coc.nvim'
+let g:netrw_dirhist_8='/Users/hendrik/.config/nvim/plugged/coc.nvim/plugin'
+let g:netrw_dirhist_7='/Users/hendrik/.config/nvim/plugged/coc.nvim'
+let g:netrw_dirhist_6='/Users/hendrik/.config/nvim/plugged'
+let g:netrw_dirhist_5='/Users/hendrik/.config/nvim/plugged/ayu-vim'
+let g:netrw_dirhist_4='/Users/hendrik/.config/nvim/plugged'
+let g:netrw_dirhist_3='/Users/hendrik/.config/nvim/plugged/coc.nvim'
