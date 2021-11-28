@@ -3,7 +3,9 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'preservim/nerdtree'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-fugitive'
 Plug 'dense-analysis/ale'
+Plug 'cespare/vim-toml'
 
 " Language Server Alternatives
 "Plug 'neoclide/coc.nvim', {'branch': 'release', 'for': ['rust']}
@@ -61,6 +63,8 @@ let g:ale_linters = {'rust': ['analyzer']}
   " auto/smart indent
   set autoindent smartindent
 
+  set guifont=DejaVu\ Sans\ Mono:h7
+
 " LOOKS }}}
 
 " COLOR {{{
@@ -78,6 +82,15 @@ colorscheme maui
   nnoremap k gk
   nnoremap j gj
   " navigation }}}
+
+" SHORTCUTS {{{
+
+  autocmd FileType python map <buffer> <F3> :call Flake8()<CR>
+  nnoremap <F5> :GundoToggle<CR>
+  map <F9> :NERDTreeToggle<CR>
+  map <F11> :set fullscreen!<CR>
+" SHORTCUTS }}}
+
 
 " window stuff {{{
   map <C-h> <C-w>h
