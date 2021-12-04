@@ -6,6 +6,7 @@ Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-fugitive'
 Plug 'dense-analysis/ale'
 Plug 'cespare/vim-toml'
+Plug 'godlygeek/tabular'
 
 " Language Server Alternatives
 "Plug 'neoclide/coc.nvim', {'branch': 'release', 'for': ['rust']}
