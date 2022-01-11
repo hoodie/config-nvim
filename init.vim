@@ -7,6 +7,13 @@ Plug 'tpope/vim-fugitive'
 Plug 'dense-analysis/ale'
 Plug 'cespare/vim-toml'
 Plug 'godlygeek/tabular'
+Plug 'rust-lang/rust.vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'NoahTheDuke/vim-just'
+
+Plug 'lotabout/skim', { 'dir': '~/.skim', 'do': './install' }
+Plug 'lotabout/skim.vim'
+command! -bang -nargs=* Rg call fzf#vim#rg_interactive(<q-args>, fzf#vim#with_preview('right:50%:hidden', 'alt-h'))
 
 " Language Server Alternatives
 "Plug 'neoclide/coc.nvim', {'branch': 'release', 'for': ['rust']}
@@ -24,7 +31,17 @@ Plug 'ayu-theme/ayu-vim'
 call plug#end()
 " }}}
 
+" ALE {{{
 let g:ale_linters = {'rust': ['analyzer']}
+"let g:ale_linters = {'rust': ['rls']}
+set omnifunc=ale#completion#OmniFunc
+let g:ale_completion_enabled = 1
+let g:ale_completion_autoimport = 1
+let g:ale_sign_column_always = 1
+let g:ale_fix_on_save = 0
+let g:ale_sign_error = "x"
+let g:ale_sign_warning = "!"
+" ALE }}}
 
 " BEHAVIOUR {{{
   filetype plugin indent on
