@@ -10,10 +10,14 @@ Plug 'godlygeek/tabular'
 Plug 'rust-lang/rust.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'NoahTheDuke/vim-just'
+Plug 'mbbill/undotree'
 
 Plug 'lotabout/skim', { 'dir': '~/.skim', 'do': './install' }
 Plug 'lotabout/skim.vim'
 command! -bang -nargs=* Rg call fzf#vim#rg_interactive(<q-args>, fzf#vim#with_preview('right:50%:hidden', 'alt-h'))
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Language Server Alternatives
 "Plug 'neoclide/coc.nvim', {'branch': 'release', 'for': ['rust']}
@@ -89,7 +93,7 @@ let g:ale_sign_warning = "!"
 "colorscheme Tomorrow
 let ayucolor="dark"
 colorscheme ayu
-colorscheme maui
+"colorscheme maui
 " COLOR }}}
 
 " navigation {{{
