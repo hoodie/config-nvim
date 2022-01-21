@@ -11,6 +11,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'NoahTheDuke/vim-just'
 Plug 'mbbill/undotree'
+Plug 'airblade/vim-gitgutter'
 
 Plug 'lotabout/skim', { 'dir': '~/.skim', 'do': './install' }
 Plug 'lotabout/skim.vim'
