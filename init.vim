@@ -13,6 +13,7 @@ Plug 'NoahTheDuke/vim-just'
 Plug 'mbbill/undotree'
 Plug 'airblade/vim-gitgutter'
 
+
 Plug 'lotabout/skim', { 'dir': '~/.skim', 'do': './install' }
 Plug 'lotabout/skim.vim'
 command! -bang -nargs=* Rg call fzf#vim#rg_interactive(<q-args>, fzf#vim#with_preview('right:50%:hidden', 'alt-h'))
@@ -31,6 +32,7 @@ Plug 'vim-airline/vim-airline-themes'
 
 " Colors
 Plug 'zsoltf/vim-maui'
+Plug 'endel/vim-github-colorscheme'
 Plug 'chriskempson/vim-tomorrow-theme'
 Plug 'ayu-theme/ayu-vim'
 call plug#end()
